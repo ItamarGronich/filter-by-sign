@@ -9,7 +9,7 @@
 		}
 		
 		
-		this.getCurrVal = getCurrVal();
+		this.getCurrVal = getCurrVal;
 
 	}
 

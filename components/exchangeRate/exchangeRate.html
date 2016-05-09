@@ -1,0 +1,12 @@
+<div>
+	<p>Select your currencies to view exchange rates</p>
+	<div class="spaceIt">
+		<select ng-options="sym for sym in symList" ng-model="base" ng-change="changeEvent()">
+		</select>
+		<span> in </span>
+		<select ng-options="sym for sym in symList" ng-model="exc" ng-change="changeEvent()">
+		</select>
+	</div>
+
+	<div class="spaceIt">{{response}}</div>
+</div>

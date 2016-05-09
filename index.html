@@ -3,16 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Custom Filters</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body ng-app="currApp">
 
-	<div ng-controller="test"> {{foo | bySign }}</div>
+
+<div class="wrapper">
+	<market-value class="spaceIt"></market-value>
+	<exchange-rate class="spaceIt"></exchange-rate>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
 <script src="app.js"></script>
 <script src="utils/fltr-bySign.js"></script>
 <script src="services/dataService.js"></script>
 <script src="services/fixer.ioService.js"></script>
+<script src="components/exchangeRate/exchangeRate.js"></script>
+<script src="components/marketValue/marketValue.js"></script>
 
 
 
